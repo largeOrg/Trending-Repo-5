@@ -1,0 +1,10 @@
+name: QA_Workflow_security_advisory_32
+on:
+  security_advisory:
+    types: [published]
+jobs:
+  qa-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: QA Step
+        run: echo QA-Workflow original step
