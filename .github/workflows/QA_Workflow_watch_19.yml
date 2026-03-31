@@ -1,0 +1,10 @@
+name: QA_Workflow_watch_19
+on:
+  watch:
+    types: [started]
+jobs:
+  qa-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: QA Step
+        run: echo QA-Workflow original step
