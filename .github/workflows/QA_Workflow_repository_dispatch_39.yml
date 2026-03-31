@@ -1,0 +1,10 @@
+name: QA_Workflow_repository_dispatch_39
+on:
+  repository_dispatch:
+    types: [custom-event]
+jobs:
+  qa-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: QA Step
+        run: echo QA-Workflow original step
