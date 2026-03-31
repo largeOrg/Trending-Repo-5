@@ -1,0 +1,9 @@
+name: QA_Workflow_page_build_17
+on:
+  page_build:
+jobs:
+  qa-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: QA Step
+        run: echo QA-Workflow original step
